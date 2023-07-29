@@ -1,8 +1,45 @@
-<h1>TypeScript Crash course by arham khan &#x2764;</h1>
+<h1>TypeScript Crash course by Arham khan &#x2764;</h1>
 
-<h2>Dynamically Typed Language</h2>
+<h2>Installation Guide</h2>
 
-<p>It is a dynamically typed language.</p>
+<ol>
+  <li><strong>Install Node.js:</strong><br>
+    TypeScript requires Node.js. If you don't have it installed, download and install Node.js from the official website: <a href="https://nodejs.org/" target="_blank">https://nodejs.org/</a></li>
+  <li><strong>Install TypeScript using npm:</strong><br>
+    Once Node.js is installed, open your terminal or command prompt and run the following command to install TypeScript globally on your system:<br>
+    <code>npm install -g typescript</code><br>
+    The <code>-g</code> flag ensures that TypeScript is installed globally, making it accessible from any directory in your system.</li>
+  <li><strong>Verify TypeScript Installation:</strong><br>
+    After the installation is complete, you can check the TypeScript version to ensure it was installed successfully. Run the following command:<br>
+    <code>tsc --version</code><br>
+    This will display the version number of TypeScript installed on your system.</li>
+  <li><strong>Create a TypeScript File:</strong><br>
+    Now that TypeScript is installed, let's create a simple TypeScript file. Create a new file with a <code>.ts</code> extension, for example, <code>app.ts</code>.</li>
+  <li><strong>Write TypeScript Code:</strong><br>
+    Open the <code>app.ts</code> file in a code editor and add the following TypeScript code:<br>
+    <pre><code>function greet(name: string) {
+  console.log(`Hello, ${name}!`);
+}
+
+let personName: string = "Arham";
+greet(personName);</code></pre>
+    In this example, we have a function <code>greet</code> that takes a <code>name</code> parameter of type <code>string</code> and logs a greeting to the console.</li>
+  <li><strong>Compile TypeScript to JavaScript:</strong><br>
+    TypeScript code needs to be compiled to JavaScript before it can be executed in the browser or Node.js. Run the following command to compile the <code>app.ts</code> file:<br>
+    <code>tsc app.ts</code><br>
+    This will create a new file called <code>app.js</code>, which contains the JavaScript code generated from your TypeScript code.</li>
+  <li><strong>Run the JavaScript Code:</strong><br>
+    You can now run the generated JavaScript code using Node.js:<br>
+    <code>node app.js</code><br>
+    The output should be:<br>
+    <pre><code>Hello, Arham!</code></pre></li>
+</ol>
+
+<p>Congratulations! You've successfully installed TypeScript and run your first TypeScript program.</p>
+
+<h2>Statically Typed Language</h2>
+
+<p>It is a statically typed language.</p>
 
 <p>We have to explicitly tell the type of data, for example:</p>
 
